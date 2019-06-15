@@ -11,11 +11,11 @@
       <div id="main">
         <div id="container">
           <div id="content" role="main">
-            <header id="header">
-              <a href="http://www.epam.com">
-                <img src="logo.png" alt="epam" />
-              </a>
+            <a href="http://www.epam.com">
+              <img src="logo.png" alt="epam" />
+            </a>
 
+            <header id="header">
               <h1>HTML Elements</h1>
 
               <hr />
@@ -28,11 +28,9 @@
                 <a href="#table">Table</a>
                 <a href="#blockquotes">Blockquotes</a>
               </nav>
-            </header>
 
-            <hr />
+              <hr />
 
-            <section>
               <p>
                 Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing
                 elit. <strong>This is strong.</strong> Nullam dignissim
@@ -59,11 +57,9 @@
                 <mark>Let's make that 7.</mark> This <s>text</s> has been
                 struck.
               </p>
-            </section>
 
-            <hr />
+              <hr />
 
-            <section>
               <p>
                 Pay attention to h1 tag inside section element. Font-size for h1
                 is the same as font-size for h2, because we have to use only one
@@ -74,7 +70,7 @@
               <h4>Header 4</h4>
               <h5>Header 5</h5>
               <h6>Header 6</h6>
-            </section>
+            </header>
 
             <hr />
 
@@ -108,27 +104,32 @@ both           spaces and
 </code>
 </pre>
 
-              <h2 id="list">Unordered Product List</h2>
+            </section>
+
+            <section id="list">
+              <h2>Unordered Product List</h2>
               <ul>
                 <li>Eggs</li>
-                <li>Meat</li>
-                <ul>
-                  <li>Chicken</li>
-                  <li>Beef</li>
-                  <li>Pork</li>
-                </ul>
+                <li>Meat
+                  <ul>
+                    <li>Chicken</li>
+                    <li>Beef</li>
+                    <li>Pork</li>
+                  </ul>
+                </li>
                 <li>Milk</li>
               </ul>
 
               <h2>Ordered TODO List</h2>
               <ol>
                 <li>Relax</li>
-                <li>Finish homework</li>
-                <ol>
-                  <li>Analyze requirements</li>
-                  <li>Create HTML page</li>
-                  <li>Upload to GitHub</li>
-                </ol>
+                <li>Finish homework
+                  <ol>
+                    <li>Analyze requirements</li>
+                    <li>Create HTML page</li>
+                    <li>Upload to GitHub</li>
+                  </ol>
+                </li>
                 <li>Enjoy your day</li>
               </ol>
 
@@ -142,8 +143,7 @@ both           spaces and
                 <dd>JavaScript is the Programming Language for the Web</dd>
               </dl>
 
-              <label
-                >Select option
+              <label>Select option
                 <select name="Select option">
                   <option>HTML</option>
                   <option>CSS</option>
@@ -187,8 +187,11 @@ both           spaces and
                   </tr>
                 </tbody>
               </table>
+            </section>
 
-              <h2 id="blockquotes">Blockquotes</h2>
+            <section id="blockquotes">
+
+              <h2>Blockquotes</h2>
               <p>
                 Let's keep it simple. Italics are good to help set it off from
                 the body text. Be sure to style the citation.
@@ -201,29 +204,34 @@ both           spaces and
                 have been considered magic a few hundred years ago."
               </blockquote>
               <blockquote><a href="#">Elon Musk</a></blockquote>
-            </section>
+            
 
-            <hr />
+              <hr />
 
-            <section>
               <form>
-                <label>First name: <input type="text" name="firstName" /></label>
+                <label>First name: <input type="text" name="firstName"/></label>
                 <br />
-                <label>Second name: <input type="text" name="secondName"/></label>
-                <br/>
-                <label>Email: <input type="email" name="Email" /></label>
-                <br/>
-                <label>Password: <input type="password" name="Password"/></label>
-                <br/>
+                <label
+                  >Second name: <input type="text" name="secondName"
+                /></label>
+                <br />
+                <label>Email: <input type="email" name="Email"/></label>
+                <br />
+                <label
+                  >Password: <input type="password" name="Password"
+                /></label>
+                <br />
                 <textarea cols="30" rows="5"></textarea>
-                <br/>
+                <br />
                 <button type="submit" name="submit">Submit</button>
               </form>
-            </section>
+            
 
-            <footer>
-              &copy; Copyright Epam Systems
-            </footer>
+              <footer>
+                &copy; Copyright Epam Systems
+              </footer>
+
+            </section>
           </div>
         </div>
       </div>
