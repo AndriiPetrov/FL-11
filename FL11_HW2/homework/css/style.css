@@ -1,0 +1,66 @@
+/*
+
+write your code here
+
+*/
+@media print {
+    .tm-sidebar, section .flex-item.tm-team-img, #about,
+    .blocks .tm-content-box, #ideas #tmCarousel>ol,
+    #ideas .carousel-item:not(.active), section.tm-content-box:not(.heading) {
+        display: none;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        /* font-family: "Times New Roman" */
+    }
+
+    .tm-main-content {
+        padding-top: 0;
+    }
+
+    .tm-banner {
+        padding: 0;
+    }
+
+    .tm-team-description-container
+    {
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    p:last-child{
+        margin-bottom: 0;
+    }
+
+    section.heading.tm-content-box 
+    .padding-medium {
+        /* margin: 0; */
+        padding: 0;
+        text-align: center;
+    }
+
+    section.heading.tm-content-box 
+    .padding-medium ol li:nth-child(even) {
+        text-indent: 200px;
+    }
+    section.heading.tm-content-box 
+    .padding-medium ol li:nth-child(odd) {
+        text-indent: -200px;
+    }
+    section.heading.tm-content-box 
+    .padding-medium ol li::first-letter{
+        font-size: 25px;
+        color: lightskyblue;
+    }
+
+    #tmCarousel {
+        padding: 30px;
+        margin-bottom: 0;
+    }
+
+
+    
+}
