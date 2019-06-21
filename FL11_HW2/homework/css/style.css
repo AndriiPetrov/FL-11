@@ -114,3 +114,46 @@ write your code here
 }
 
 /* Task 4 */
+section::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 50px solid #76cdd7;
+    border-right: 50px solid transparent;
+}
+
+/* Task 5 */
+.heading h2{
+    text-align: center;
+    color: #76cdd7;
+}
+
+.heading ol {
+    list-style-type: lower-roman; 
+}
+
+.heading ol li a:link {
+    color: black;
+}
+.heading ol li a:visited {
+    color: #ffb347;
+    text-decoration: none;
+}
+.heading ol li a:hover {
+    color: #ffb347;
+    font-weight: bold;
+}
+.heading ol li a:hover::before {
+    content: '|';
+    /* font-weight: bold; */
+}
+
+.text::after {
+    content: 'New';
+    color: red;
+    font-variant: small-caps;
+    font-weight: 700;
+    vertical-align: super;
+    font-size: 12px
+}
+/* Task 6 */
