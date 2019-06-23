@@ -1,0 +1,222 @@
+// Write your styles here
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url('../img/m-h-day.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  border-bottom-right-radius: 35%;
+
+  font-family: 'Source Sans Pro', sans-serif;
+
+  .header-wrap {
+    padding-top: 20px;
+    padding-left: 150px;
+
+    .landing-logo {
+      p {
+        color: #353f4c;
+        font-size: 18px;
+        display: inline-block;
+        position: relative;
+        bottom: 5px;
+        left: 10px;
+  
+        span {
+          display: block;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .header_heading{
+      margin-top: 40px;
+      font-size: 70px;
+      font-weight: bold;
+      width: 500px;
+      position: relative;
+      z-index: 0;
+    }
+    .header_heading::after {
+      content: '';
+      background-color: #0ca1c8;
+      display: block;
+      height: 20px;
+      width: 58%;
+      position: absolute;
+      z-index: -1;
+      bottom: 15px;
+    }
+    .header_text {
+      margin-top: 20px;
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+    .header_button {
+      margin-top: 50px;
+      height: 50px;
+      width: 140px;
+      background-color: #699a00;
+      color: white;
+      border: none;
+      font-size: 16px;
+    }
+  }
+}
+
+main{
+  font-family: 'Hind', sans-serif;
+
+  .section_text {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    z-index: 0;
+  }
+  .section_text::after {
+    content: "";
+    background-color: #0ca1c8;
+    display: block;
+    height: 10px;
+    width: 12%;
+    position: absolute;
+    z-index: -1;
+    bottom: 20px;
+    left: 775px;
+  }
+  .section_card_wrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    .section_card {
+      width: 360px;
+      height: 420px;
+      border-radius: 5px;
+      background-color: #1c1e2a;
+      margin: 10px;
+      padding: 15px;
+      text-align: center;
+
+      .section_card_img {
+        width: 360px;
+      }
+      .section_card_heading {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        position: relative;
+        z-index: 0;
+        display: inline-block;
+        
+        .section_card_underline {
+          position: absolute;
+          z-index: -1;
+          bottom: 5px;
+          right: 0px;
+          height: 10px;
+          width: 100%;
+          background-color: #0ca1c8;
+        }
+      }
+      .section_card_text {
+        margin-top: 10px;
+        color: #9796b3;
+      }
+    }
+  }
+
+  .section_banner {
+    width: 950px;
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 120px;
+    background-image: linear-gradient(90deg, #63930e, #2859dc);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .section_banner_text_wrap {
+      padding-left: 100px;
+      display: inline-block;
+
+      .section_banner_heading {
+        font-size: 30px;
+        font-weight: bold;
+        display: inline-block;
+        position: relative;
+        z-index: 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          width: 60px;
+          height: 15px;
+          background-color: #0ca1c8;
+          bottom: 10px;
+          left: 125px;
+        }
+      }
+      
+      .section_banner_text {
+        color:#a5babd;
+      }
+    }
+
+    .section_banner_button {
+      margin-left: 200px;
+      height: 50px;
+      width: 140px;
+      background-color: #699a00;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 2px;
+    }
+  }
+}
+
+footer {
+  background-color: #1c1e2a;
+  height: 250px;
+  width: 100%;
+  margin-top: -70px;
+  // display: flex;
+  // align-items: flex-end;
+  
+  .footer-wrap {
+    padding-top: 135px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+    .landing-logo {
+      p {
+        color: #353f4c;
+        font-size: 18px;
+        display: inline-block;
+        position: relative;
+        bottom: 5px;
+        left: 10px;
+        color: #b4bfca;
+  
+        span {
+          display: block;
+          font-size: 16px;
+        }
+      }
+    }
+    .footer_text {
+      width: 300px;
+    }
+  }
+}
