@@ -1,27 +1,37 @@
-* {
+*, body {
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: #ffffff; }
+
 header {
+  margin: 0 auto;
   background-image: url("../img/m-h-day.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 700px;
   border-bottom-right-radius: 35%;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  color: #2C2F3C; }
   header .header-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding-top: 20px;
-    padding-left: 150px; }
+    padding-left: 15%; }
     header .header-wrap .landing-logo p {
-      color: #353f4c;
-      font-size: 18px;
+      font-size: 24px;
       display: inline-block;
       position: relative;
       bottom: 5px;
       left: 10px; }
       header .header-wrap .landing-logo p span {
         display: block;
-        font-size: 16px; }
+        font-size: 12px;
+        text-align: center;
+        font-family: "Hind", sans-serif; }
     header .header-wrap .header_heading {
       margin-top: 40px;
       font-size: 70px;
@@ -41,35 +51,39 @@ header {
     header .header-wrap .header_text {
       margin-top: 20px;
       line-height: 1.6;
-      white-space: pre-line; }
+      white-space: pre-line;
+      font-family: "Hind", sans-serif; }
     header .header-wrap .header_button {
-      margin-top: 50px;
       height: 50px;
       width: 140px;
       background-color: #699a00;
       color: white;
       border: none;
-      font-size: 16px; }
+      font-size: 16px;
+      margin-top: 50px; }
 
 main {
-  font-family: 'Hind', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #ffffff;
+  padding-top: 45px;
+  color: #2C2F3C;
+  text-align: center; }
   main .section_text {
     text-align: center;
-    margin-top: 45px;
     font-size: 40px;
     font-weight: bold;
+    display: inline-block;
     position: relative;
     z-index: 0; }
-  main .section_text::after {
-    content: "";
-    background-color: #0ca1c8;
-    display: block;
-    height: 10px;
-    width: 12%;
-    position: absolute;
-    z-index: -1;
-    bottom: 20px;
-    left: 775px; }
+    main .section_text::after {
+      content: "";
+      background-color: #0ca1c8;
+      height: 10px;
+      width: 43%;
+      position: absolute;
+      z-index: -1;
+      bottom: 10px;
+      left: 215px; }
   main .section_card_wrap {
     margin-top: 20px;
     display: flex;
@@ -94,12 +108,13 @@ main {
         main .section_card_wrap .section_card .section_card_heading .section_card_underline {
           position: absolute;
           z-index: -1;
-          bottom: 5px;
+          bottom: 0px;
           right: 0px;
           height: 10px;
           width: 100%;
           background-color: #0ca1c8; }
       main .section_card_wrap .section_card .section_card_text {
+        font-family: "Hind", sans-serif;
         margin-top: 10px;
         color: #9796b3; }
   main .section_banner {
@@ -128,25 +143,28 @@ main {
           width: 60px;
           height: 15px;
           background-color: #0ca1c8;
-          bottom: 10px;
-          left: 125px; }
+          bottom: 0px;
+          left: 122px; }
       main .section_banner .section_banner_text_wrap .section_banner_text {
-        color: #a5babd; }
+        color: #a5babd;
+        text-align: start;
+        margin-top: 10px; }
     main .section_banner .section_banner_button {
-      margin-left: 200px;
       height: 50px;
       width: 140px;
       background-color: #699a00;
       color: white;
       border: none;
       font-size: 16px;
+      margin-left: 200px;
       border-radius: 2px; }
 
 footer {
   background-color: #1c1e2a;
   height: 250px;
   width: 100%;
-  margin-top: -70px; }
+  margin-top: -70px;
+  font-family: "Hind", sans-serif; }
   footer .footer-wrap {
     padding-top: 135px;
     padding-left: 0px;
@@ -155,17 +173,15 @@ footer {
     align-items: center;
     color: white; }
     footer .footer-wrap .landing-logo p {
-      color: #353f4c;
-      font-size: 18px;
+      font-size: 24px;
       display: inline-block;
       position: relative;
       bottom: 5px;
-      left: 10px;
-      color: #b4bfca; }
+      left: 10px; }
       footer .footer-wrap .landing-logo p span {
         display: block;
-        font-size: 16px; }
+        font-size: 12px;
+        text-align: center;
+        font-family: "Hind", sans-serif; }
     footer .footer-wrap .footer_text {
       width: 300px; }
-
-/*# sourceMappingURL=style1.css.map */
