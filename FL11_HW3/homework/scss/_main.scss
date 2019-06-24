@@ -62,7 +62,7 @@ header {
 
     .header_heading{
       margin-top: 40px;
-      font-size: 70px;
+      font-size: map-get($font-sizes, "extra-large");
       font-weight: bold;
       width: 500px;
       position: relative;
@@ -177,7 +177,7 @@ main{
       display: inline-block;
 
       .section_banner_heading {
-        font-size: 30px;
+        font-size: map-get($map: $font-sizes, $key: "large");
         font-weight: bold;
         display: inline-block;
         position: relative;
