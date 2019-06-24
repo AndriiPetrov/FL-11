@@ -49,12 +49,8 @@ header {
   color: $headerColor;
 
   .header-wrap {
-    // margin-left: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     padding-top: 20px;
-    padding-left: 15%;
+    padding-left: 12%;
 
     .landing-logo {
       @include logo($fontFamilyLandingLogo);
@@ -166,7 +162,7 @@ main{
     height: 140px;
     margin: 0 auto;
     margin-top: 120px;
-    background-image: $backgroundImageBaner;
+    background-image: $backgroundImageBanner;
     border-radius: 5px;
     display: flex;
     align-items: center;
