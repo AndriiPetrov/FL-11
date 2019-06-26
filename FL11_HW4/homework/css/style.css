@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+  background-image: url("../img/sample2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+  /* color: #097774
+  #FFFFFF
+  #F3F3F3
+  #F0F0F0
+  #000000
+  #E8E8E8
+  #9E9E9E */
+  
+  /* height: 100%; */
+}
+.header-wrap {
+  padding: 40px;
+}
