@@ -21,7 +21,8 @@ body {
   #F0F0F0
   #000000
   #E8E8E8
-  #9E9E9E */
+  #9E9E9E 
+  &#9829;*/
 }
 .header-wrap {
   padding: 50px 70px;
@@ -66,4 +67,37 @@ body {
 .header-button:hover {
   background-color: #FFFFFF;
   color: #000000;
+}
+
+.main-wrapper {
+  height: 800px;
+  background-color: #F3F3F3;
+}
+
+.black-triangle {
+  background: linear-gradient(to top right, #F3F3F3 50%, #000000 50%);
+  height: 260px;
+  padding: 10px 40px;
+}
+.black-triangle p:first-child {
+  color: #FFFFFF;
+  width: 50%;
+  float: right;
+}
+.black-triangle br {
+  clear: both;
+}
+.black-triangle p:last-child {
+  color: #000000;
+  float: left;
+  font-size: 22px;
+  padding: 10px 40px;
+  white-space: pre-line;
+}
+
+.main-wrapper h1 {
+  font-weight: 400;
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: -20px;
 }
