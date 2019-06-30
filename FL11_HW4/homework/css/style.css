@@ -3,7 +3,6 @@
   padding: 0;
 }
 body {
-  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,13 +14,6 @@ body {
   min-height: 900px;
   max-width: 100%;
   color: #FFFFFF; 
-  /* color: #097774
-  #FFFFFF
-  #F3F3F3
-  #F0F0F0
-  #000000
-  #E8E8E8
-  #9E9E9E */
 }
 .header-wrap {
   padding: 50px 70px;
@@ -261,6 +253,7 @@ aside {
   color: white;
   padding: 10px;
   border: none;
+  cursor: pointer;
 }
 
 footer {
@@ -276,7 +269,6 @@ footer {
 .footer-wrap p:first-child {
   margin-right: auto;
 }
-
 .footer-wrap p:not(:first-child) {
   margin-left: 35px;
 }
