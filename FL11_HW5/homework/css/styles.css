@@ -30,3 +30,88 @@ body {
 }
 
 /* Your styles go here */
+@media screen and (max-width: 1400px) {
+  body {
+    margin: 0 auto;
+    width: 80%;
+    background: var(--bg-color--dark, #0b192f);
+  }
+
+  .header {
+    background-color: var(--bg-color--header);
+    color: var(--link);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .header h3 {
+    margin-right: auto;
+    font-weight: 200;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .header h3 span {
+    color: #D12955;
+  }
+  .nav {
+    
+  }
+  .nav ol {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav ol li a {
+    text-decoration: none;
+    color: var(--link);
+    padding: 20px;
+  }
+  .nav ol li a:hover {
+    background-color: var(--link--hover);
+  }
+  .nav ol li:last-child {
+    text-decoration: none;
+    color: var(--link);
+    margin-right: 40px;
+  }
+
+  .main {
+    margin: 10px 10px 10px 0;
+    width: 70%;
+    color: #FFFFFF;
+    font-weight: 200;
+  }
+  .post-1 {
+    display: flex;
+  }
+  .post-1 img {
+    max-width: 50%;
+    width: auto;
+    height: auto;
+  }
+  .post-1 .article-1 {
+    position: relative;
+    padding: 30px;
+  }
+  .article-1 > h1 {
+    white-space: pre-line;
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 200;
+    margin-block: 0;
+  }
+  .absolute-1 {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 28px;
+  }
+  .absolute-1 p {
+    font-size: 52px;
+    /* color: var(--link--hover); */
+    margin: 0;
+  }
+
+}
