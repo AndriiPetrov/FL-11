@@ -2,13 +2,13 @@
  * Feel free to change name of colors if you need it
  * Feel free to add new colors if you need it
  */
-:root {
+/* :root {
   --bg-color--dark: #0b192f;
   --bg-color--header: #162b4d;
   --link: #fff;
   --link--hover: #b8b8b8;
-  --bg-footer-color: #162b4d;;
-}
+  --bg-footer-color: #162b4d;
+} */
 
 body {
   font-family: roboto;
@@ -34,12 +34,12 @@ body {
   body {
     margin: 0 auto;
     width: 80%;
-    background: var(--bg-color--dark, #0b192f);
+    background: #0b192f;
   }
 
   .header {
-    background-color: var(--bg-color--header);
-    color: var(--link);
+    background-color: #162b4d;
+    color: #FFF;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -62,15 +62,15 @@ body {
   }
   .nav ol li a {
     text-decoration: none;
-    color: var(--link);
+    color: #FFF;
     padding: 20px;
   }
   .nav ol li a:hover {
-    background-color: var(--link--hover);
+    background-color: #b8b8b8;
   }
   .nav ol li:last-child {
     text-decoration: none;
-    color: var(--link);
+    color: #FFF;
     margin-right: 40px;
   }
 
@@ -172,7 +172,7 @@ body {
     text-align: center;
   }
 
-  section {
+  .section {
     display: flex;
   }
 
@@ -182,7 +182,7 @@ body {
     display: inline-block;
   }
   .article-aside {
-    background-color: var(--link);
+    background-color: #FFF;
     margin-top: 15px;
   }
   .article-aside img {
@@ -206,7 +206,7 @@ body {
   }
 
   .footer {
-    background-color: var(--bg-footer-color);
+    background-color: #162b4d;
     display: flex;
     padding: 20px;
     color: white;
@@ -317,7 +317,7 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
-  section {
+  .section {
     flex-direction: column;
   }
   .main {
