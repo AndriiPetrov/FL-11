@@ -84,91 +84,64 @@ body {
   .post-3, .post-4 {
     display: flex;
   }
-  .post-1 img, .post-2 img,
-  .post-3 img, .post-4 img {
+  .post img {
     max-width: 50%;
     width: auto;
     height: auto;
     cursor: pointer;
   }
-  .post-1 img:hover, .article-1:hover, 
-  .post-2 img:hover, .article-2:hover,
-  .post-3 img:hover, .article-3:hover, 
-  .post-4 img:hover, .article-4:hover {
+  .post img:hover, .article:hover {
     opacity: 0.5;
   }
-  .post-1 .article-1,
-  .post-2 .article-2,
-  .post-3 .article-3,
-  .post-4 .article-4,
-  .post-5 .article-5 {
+  .post .article {
     position: relative;
     padding: 30px;
     cursor: pointer;
   }
-  .article-1 > h1, 
-  .article-2 > h1,
-  .article-3 > h1,
-  .article-4 > h1,
-  .article-5 > h1 {
+  .post .article > h1 {
     font-size: 40px;
     font-weight: 200;
     margin-top: 20px;
     margin-bottom: 0;
     width: 70%;
   }
-  .article-1 h1 ~ p, 
-  .article-2 h1 ~ p,
-  .article-3 h1 ~ p,
-  .article-4 h1 ~ p,
-  .article-5 h1 ~ p {
+  .post .article h1 ~ p {
     width: 75%;
     height: auto;
     font-size: 14px;
   }
-  .absolute-1,
-  .absolute-3,
-  .absolute-5 {
+  .post:nth-child(odd) .absolute {
     position: absolute;
     top: 20px;
     right: 15px;
     font-size: 28px;
   }
-  .absolute-1 p,
-  .absolute-2 p,
-  .absolute-3 p,
-  .absolute-4 p,
-  .absolute-5 p {
+  .absolute p {
     font-size: 52px;
     margin: 0;
   }
 
-  .post-2 img,
-  .post-4 img {
+  .post:nth-child(even) img {
     order: 1;
   }
-  .article-2,
-  .article-4 {
+  .post:nth-child(even) .article {
     text-align: end;
   }
-  .article-2 > h1,
-  .article-2 h1 ~ p,
-  .article-4 > h1,
-  .article-4 h1 ~ p {
+  .post:nth-child(even) .article > h1,
+  .post:nth-child(even) .article h1 ~ p {
     margin-left: auto
   }
-  .absolute-2,
-  .absolute-4 {
+  .post:nth-child(even) .absolute {
     position: absolute;
     top: 20px;
     left: 15px;
     font-size: 28px;
   }
-  .article-5 > h1,
-  .article-5 h1 ~ p {
+  .post:last-child .article > h1,
+  .post:last-child .article h1 ~ p {
     width: 90%;
   }
-  .absolute-5 {
+  .post:last-child .absolute {
     text-align: center;
   }
 
@@ -253,46 +226,35 @@ body {
   .header .menu-button {
     margin: 15px 0;
   }
-  .post-1, .post-2, .post-3, .post-4, .post-5 {
-    flex-wrap: wrap;
-  }
   .main {
     max-width: 58%;
   }
-  .post-1 img, 
-  .post-2 img, 
-  .post-3 img, 
-  .post-4 img {
+  .post {
+    flex-wrap: wrap;
+  }
+  .post img {
     max-width: 100%;
     height: auto;
     width: auto;
     flex: 1;
   }
-  .post-2 img,
-  .post-4 img {
+  .post:nth-child(even) img {
     order: 0;
   }
-  .article-2 > h1,
-  .article-2 h1 ~ p,
-  .article-4 > h1,
-  .article-4 h1 ~ p {
+  .post:nth-child(even) .article > h1,
+  .post:nth-child(even) .article h1 ~ p {
     margin-left: 0;
     text-align: start;
   }
-  .article-1,
-  .article-2,
-  .article-3,
-  .article-4{
+  .article {
     margin-bottom: 80px;
   }
-  .post-5 .article-5 {
+  .post:last-child .article {
     padding-bottom: 110px;
+    margin-bottom: 0;
   }
-  .absolute-1,
-  .absolute-2,
-  .absolute-3,
-  .absolute-4,
-  .absolute-5 {
+  .post:nth-child(even) .absolute,
+  .post:nth-child(odd) .absolute {
     position: absolute;
     display: inline-block;
     top: unset;
@@ -328,6 +290,9 @@ body {
     max-width: 100%;
     margin-top: -15px;
     padding-top: 0;
+  }
+  .footer {
+    margin-top: 15px;
   }
   .footer .coding-name {
     width: 30%;
