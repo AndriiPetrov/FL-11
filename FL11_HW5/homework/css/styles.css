@@ -78,8 +78,8 @@ body {
   }
 
   .main {
-    margin: 10px 10px 10px 0;
-    width: 75%;
+    margin: 15px 15px 15px 0;
+    max-width: 76%;
     color: #FFFFFF;
     font-weight: 200;
   }
@@ -106,7 +106,7 @@ body {
   .article-3 > h1,
   .article-4 > h1,
   .article-5 > h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 200;
     margin-top: 20px;
     margin-bottom: 0;
@@ -117,7 +117,7 @@ body {
   .article-3 h1 ~ p,
   .article-4 h1 ~ p,
   .article-5 h1 ~ p {
-    width: 70%;
+    width: 75%;
     height: auto;
     font-size: 14px;
   }
@@ -126,7 +126,7 @@ body {
   .absolute-5 {
     position: absolute;
     top: 20px;
-    right: 10px;
+    right: 15px;
     font-size: 28px;
   }
   .absolute-1 p,
@@ -156,7 +156,7 @@ body {
   .absolute-4 {
     position: absolute;
     top: 20px;
-    left: 10px;
+    left: 15px;
     font-size: 28px;
   }
   .article-5 > h1,
@@ -165,5 +165,55 @@ body {
   }
   .absolute-5 {
     text-align: center;
+  }
+
+  section {
+    display: flex;
+  }
+
+  .aside {
+    max-width: 23%;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  .article-aside {
+    background-color: var(--link);
+    margin-top: 15px;
+  }
+  .article-aside img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  .aside-text {
+    padding: 25px;
+    font-weight: 200;
+  }
+  .aside-text h2 {
+    font-weight: 300;
+    font-size: 28px;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .aside-text h2 ~ p {
+    margin: 0;
+  }
+
+  .footer {
+    background-color: var(--bg-footer-color);
+    display: flex;
+    padding: 20px;
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .footer p {
+    margin: 0;
+    margin-top: 5px;
+  }
+  .footer .coding-name {
+    margin-left: auto;
+    width: 11%
   }
 }
