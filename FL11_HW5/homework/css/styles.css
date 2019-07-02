@@ -55,9 +55,6 @@ body {
   .header h3 span {
     color: #D12955;
   }
-  .nav {
-    
-  }
   .nav ol {
     list-style-type: none;
     display: flex;
@@ -92,6 +89,13 @@ body {
     max-width: 50%;
     width: auto;
     height: auto;
+    cursor: pointer;
+  }
+  .post-1 img:hover, .article-1:hover, 
+  .post-2 img:hover, .article-2:hover,
+  .post-3 img:hover, .article-3:hover, 
+  .post-4 img:hover, .article-4:hover {
+    opacity: 0.5;
   }
   .post-1 .article-1,
   .post-2 .article-2,
@@ -100,6 +104,7 @@ body {
   .post-5 .article-5 {
     position: relative;
     padding: 30px;
+    cursor: pointer;
   }
   .article-1 > h1, 
   .article-2 > h1,
@@ -215,5 +220,116 @@ body {
   .footer .coding-name {
     margin-left: auto;
     width: 11%
+  }
+  .menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 10px;
+  }
+  .nav {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  .menu-button div {
+    width: 25px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 6px 0;
+  }
+  .header {
+    flex-direction: column-reverse;
+    margin-right: 15px;
+  }
+  .header h3 {
+    margin: 30px 0;
+  }
+  .header .menu-button {
+    margin: 15px 0;
+  }
+  .post-1, .post-2, .post-3, .post-4, .post-5 {
+    flex-wrap: wrap;
+  }
+  .main {
+    max-width: 58%;
+  }
+  .post-1 img, 
+  .post-2 img, 
+  .post-3 img, 
+  .post-4 img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    flex: 1;
+  }
+  .post-2 img,
+  .post-4 img {
+    order: 0;
+  }
+  .article-2 > h1,
+  .article-2 h1 ~ p,
+  .article-4 > h1,
+  .article-4 h1 ~ p {
+    margin-left: 0;
+    text-align: start;
+  }
+  .article-1,
+  .article-2,
+  .article-3,
+  .article-4{
+    margin-bottom: 80px;
+  }
+  .post-5 .article-5 {
+    padding-bottom: 110px;
+  }
+  .absolute-1,
+  .absolute-2,
+  .absolute-3,
+  .absolute-4,
+  .absolute-5 {
+    position: absolute;
+    display: inline-block;
+    top: unset;
+    right: 45%;
+    font-size: 28px;
+  }
+
+  .aside {
+    max-width: 38%;
+    margin-right: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+  }
+  .footer .coding-name {
+    margin-left: 0;
+    width: 17%
+  }
+}
+@media screen and (max-width: 480px) {
+  section {
+    flex-direction: column;
+  }
+  .main {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .aside {
+    max-width: 100%;
+    margin-top: -15px;
+    padding-top: 0;
+  }
+  .footer .coding-name {
+    width: 30%;
   }
 }
