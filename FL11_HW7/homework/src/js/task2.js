@@ -35,7 +35,7 @@ if (!isWantToPlay) {
     let randomGeneratedNumber = Math.floor(Math.random() * startingRangeOfRandom);
     // console.log(randomGeneratedNumber); // For testing purposes
 
-    for(attempts; attempts > 0; attempts--) {
+    for (attempts; attempts > 0; attempts--) {
       if (attempts === maxAttempts) {
         possibleStartingPrice = startingMaxPrice * increasedPrice;
       } else if (attempts === twoAttempts) {
