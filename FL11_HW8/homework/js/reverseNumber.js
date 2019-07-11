@@ -1,6 +1,6 @@
 function reverseNumber(number) {
-    var reverseNumber;
-    var iteration = 0;
+    let reverseNumber;
+    let iteration = 0;
 
     while (number !== 0) {
         if (iteration === 0) {
@@ -8,8 +8,8 @@ function reverseNumber(number) {
         } else {
             reverseNumber = reverseNumber * 10 + number % 10;
         }
-        parseInt(number /= 10);
-        iteration++
+        number = parseInt(number / 10);
+        iteration++;
     }
 
     return reverseNumber;
