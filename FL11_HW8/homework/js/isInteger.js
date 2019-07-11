@@ -1,8 +1,6 @@
 function isInteger(number) {
-    if (number === Math.floor(number)) {
-        return true;
-    }
-    return false;
+    return number === Math.floor(number);
 }
 
 isInteger(5);
+isInteger(5.1);
