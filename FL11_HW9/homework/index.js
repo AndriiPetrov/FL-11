@@ -105,3 +105,24 @@ function daysBetween(date1, date2) {
 }
 
 //daysBetween(new Date('2016-03-18T00:00:00'), new Date('2016-04-19T00:00:00'))  
+
+//8.
+function getAmountOfAdultPeople(data) {
+  let arrayOfDates = [];
+
+  const adultAge = 18;
+  const daysOnYears = 365;
+
+  for (let i = 0; i < data.length; i++) {
+    arrayOfDates[i] = daysBetween(new Date(data[i][' birthday ']), new Date('2019-07-16T00:00:00'));
+    arrayOfDates[i] = arrayOfDates[i] / daysOnYears;
+  }
+  
+  arrayOfDates = filterArray(arrayOfDates, function(el) { 
+    return el > adultAge; 
+  })
+  
+  return arrayOfDates.length
+}
+
+// getAmountOfAdultPeople(data) 
