@@ -117,7 +117,7 @@ function getAmountOfAdultPeople(data) {
     arrayOfDates[i] = daysBetween(new Date(data[i][' birthday ']), new Date('2019-07-16T00:00:00'));
     arrayOfDates[i] = arrayOfDates[i] / daysOnYears;
   }
-  
+
   arrayOfDates = filterArray(arrayOfDates, function(el) { 
     return el > adultAge; 
   })
@@ -126,3 +126,31 @@ function getAmountOfAdultPeople(data) {
 }
 
 // getAmountOfAdultPeople(data) 
+
+// 9.
+function keys(obj) {
+  let arrayOfKeys = []
+  
+  // eslint-disable-next-line guard-for-in
+  for (let prop in obj) {
+    arrayOfKeys.push(prop)
+  }
+
+  return arrayOfKeys;
+}
+
+//keys({keyOne: 1, keyTwo: 2, keyThree: 3}) 
+
+// 10.
+function values(obj) {
+  let arrayOfKeys = []
+  
+  // eslint-disable-next-line guard-for-in
+  for (let prop in obj) {
+    arrayOfKeys.push(obj[prop])
+  }
+
+  return arrayOfKeys;
+}
+
+//values({keyOne: 1, keyTwo: 2, keyThree: 3})
