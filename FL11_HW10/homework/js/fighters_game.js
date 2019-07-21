@@ -4,18 +4,19 @@ let _name = Symbol('name');
 let _damage = Symbol('damage');
 let _agility = Symbol('agility');
 let _hp = Symbol('hp');
+let _fighterObj = Symbol('fighterObj');
 
 const oneHundredPercent = 100;
 
 class Fighter {
-  constructor(obj) {
-      this.obj = obj
+  constructor(fighterObj) {
+      this[_fighterObj] = fighterObj;
       this[_wins] = 0;
       this[_losses] = 0;
-      this[_name] = obj.name;
-      this[_damage] = obj.damage;
-      this[_hp] = obj.hp;
-      this[_agility] = obj.agility
+      this[_name] = fighterObj.name;
+      this[_damage] = fighterObj.damage;
+      this[_hp] = fighterObj.hp;
+      this[_agility] = fighterObj.agility;
   } 
 
   getName() {
@@ -50,9 +51,9 @@ class Fighter {
     console.log(`Name: ${this.getName()}, Wins: ${this[_wins]}, Losses: ${this[_losses]}`);
   }
   
-  heal(hp) {
-    if (this[_hp] + hp > this.obj.hp) {
-      this[_hp] = this.obj.hp;
+  heal(hp = Number.MAX_SAFE_INTEGER) {
+    if (this[_hp] + hp > this[_fighterObj].hp) {
+      this[_hp] = this[_fighterObj].hp;
     } else {
       this[_hp] += hp;
     }
