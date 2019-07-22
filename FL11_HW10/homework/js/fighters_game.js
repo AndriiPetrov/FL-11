@@ -111,4 +111,3 @@ console.log(fighter1.getHealth());
 console.log(fighter2.getHealth());
 fighter1.logCombatHistory();
 fighter2.logCombatHistory();
-battle(fighter1, fighter2);
