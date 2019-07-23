@@ -12,7 +12,7 @@ function onInput() {
   }
 }
 
-inputText.addEventListener('input', onInput)
+inputText.addEventListener('input', onInput);
 
 function addTextToList() {
   if (rootNode.childElementCount < ten) {
