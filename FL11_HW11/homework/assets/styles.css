@@ -1,0 +1,55 @@
+/* Your styles goes here */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+body {
+    width: 80%;
+    margin: 0 auto;
+    color: #34B0FE;
+}
+.insert-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-action {
+    width: 93%;
+    height: 30px;
+    padding-left: 10px;
+    display: inline-block;
+}
+.input-action::placeholder {
+    font-size: 9px;
+}
+/* button {
+    padding: 0;
+} */
+.button {
+    padding: 0;
+    /* width: 35px;
+    height: 35px; */
+    background-color: transparent;
+    border: none;
+}
+.add {
+    color: #C8D0D8;
+    font-size: 35px;
+    /* margin-right: 20px; */
+    /* cursor: pointer; */
+}
+
+hr {
+    border: 2px solid #E3F2FF;
+    margin-top: 20px;
+}
+
+.color-icon {
+    color: #89C4F4;
+}
+.h2 {
+    
+    text-align: center;
+
+}
