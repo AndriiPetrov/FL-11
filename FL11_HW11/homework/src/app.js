@@ -1,9 +1,7 @@
 const ten = 10;
 
 let rootNode = document.getElementById('root');
-
 let inputText = document.getElementsByName('actionText')[0];
-
 let addButton = document.getElementsByClassName('add')[0];
 
 function onInput() {
@@ -18,7 +16,6 @@ inputText.addEventListener('input', onInput)
 
 function addTextToList() {
   if (rootNode.childElementCount < ten) {
-    // e.stopPropagation();
     let divLi = document.createElement('div');
     divLi.className = 'div-li';
 
@@ -53,24 +50,7 @@ function addTextToList() {
       once: true
     });
     deleteIcon.addEventListener('click', remove);
-    // // editIcon.addEventListener('click', remove);
 
-    // let checkboxes = document.getElementsByClassName('checkbox');
-    // let deleteIcons = document.getElementsByClassName('delete-icon');
-    // let editIcons = document.getElementsByClassName('edit-icon');
-
-    // for (let i = 0; i < checkboxes.length; i++) {
-
-    //   checkboxes[i].addEventListener('click', checked, {
-    //     capture: false,
-    //     once: true
-    //   })
-
-    //   editIcons[i].addEventListener('click', edit);
-
-    //   deleteIcons[i].addEventListener('click', remove);
-
-    // }
   } else if (rootNode.childElementCount === ten) {
     addButton.disabled = true;
     inputText.disabled = true;
