@@ -1,13 +1,19 @@
-/* Your styles goes here */
-
-/* * {
-    margin: 0;
-    padding: 0;
-} */
 body {
     width: 80%;
     margin: 0 auto;
     color: #34B0FE;
+}
+.color-icons {
+    color: #89C4F4;
+}
+
+.h2 {
+    text-align: center;
+}
+.show-if-ten {
+    text-align: center;
+    color: red;
+    display: none;
 }
 .insert-action {
     display: flex;
@@ -23,21 +29,13 @@ body {
 .input-action::placeholder {
     font-size: 9px;
 }
-/* button {
-    padding: 0;
-} */
-.button {
-    padding: 0;
-    /* width: 35px;
-    height: 35px; */
-    background-color: transparent;
-    border: none;
-}
+
 .add {
     color: #C8D0D8;
     font-size: 35px;
-    /* margin-right: 20px; */
-    /* cursor: pointer; */
+    margin-right: 15px;
+    background-color: transparent;
+    border: none;
 }
 
 hr {
@@ -45,11 +43,50 @@ hr {
     margin-top: 20px;
 }
 
-.color-icon {
-    color: #89C4F4;
+.div-li {
+    display: flex;
 }
-.h2 {
-    
-    text-align: center;
+.div-text {
+    display: inline-block;
+    margin-left: 5px;
+}
 
+.checkbox {
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: grey;
+}
+.checkedbox {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: grey;
+}
+.edit-icon {
+    padding: 0;
+    background: transparent;
+    border: none;
+    margin-left: 5px;
+}
+.delete-icon {
+    padding: 0;
+    background: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.save-icon {
+    padding: 0;
+    background: transparent;
+    border: none;
+    margin-left: 5px;
+}
+.div-wrapper-for-saving {
+    display: flex;
+}
+.input-for-saving {
+    padding-left: 10px;
+    font-size: 10px;
+    width: 20%;
 }
