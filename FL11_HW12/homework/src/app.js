@@ -106,10 +106,10 @@ function SaveChanges(e) {
   let removeButton = document.createElement('button');
   removeButton.className = 'removeButton';
 
-  let imageForRemove = document.createElement('img');
-  imageForRemove.setAttribute('src', '../assets/img/remove-s.jpg');
-  
-  removeButton.appendChild(imageForTodo);
+  let imageForRemoves = document.createElement('img');
+  imageForRemoves.setAttribute('src', '../assets/img/remove-s.jpg');
+
+  removeButton.appendChild(imageForRemoves);
 
   divForEl.appendChild(todoButton);
   divForEl.appendChild(inputTextValue);
