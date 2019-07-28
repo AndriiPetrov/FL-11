@@ -1,0 +1,37 @@
+/* Your styles go here */
+.rootNode {
+  text-align: center;
+}
+.add-new-task-button {
+  font-size: 18px;
+  padding: 0 20px;
+  border-radius: 7px;
+}
+.pEl {
+  font-size: 24px;
+}
+
+.input-for-add {
+  border-radius: 7px;
+  font-size: 18px;
+  width: 280px;
+  height: 30px;
+}
+.div-for-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.cancel-button, .save-button {
+  font-size: 18px;
+  border-radius: 7px;
+}
+.save-button {
+  margin-left: 80px;
+}
+
+/* .todoButton {
+  background: url(../assets/img/todo-s.png);
+  width: 35px;
+  height: 35px;
+} */
