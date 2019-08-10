@@ -38,10 +38,10 @@ function executeforEach(array, executionFunction) {
   let arrayOfElements = [];
 
   for (let i = 0; i < array.length; i++) {
-    if(executionFunction(array[i])) {
+    if (executionFunction(array[i])) {
       arrayOfElements.push(array[i]);
 
-      if(array.length - 1 === i) {
+      if (array.length - 1 === i) {
         return arrayOfElements;
       }
     }
