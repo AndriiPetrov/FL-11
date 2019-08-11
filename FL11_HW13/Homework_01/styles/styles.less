@@ -1,5 +1,42 @@
 @import "variables.less";
 
-h1 {
-  color: @orange;
+h1,h2 {
+  color: @blue;
+  margin-top: 0.5em;
+}
+hr {
+  border-top: 1px solid @blue;
+}
+
+.navbar-light {
+  .navbar-nav {
+    .active {
+      background-color: @blue;
+
+      &>.nav-link {
+        color: @white;
+      }
+    }
+    .nav-link {
+      color: @black;
+    }
+  }
+}  
+
+.red {
+  background: @red;
+}
+.blue {
+  background: @blue;
+}
+.orange {
+  background: @orange;
+}
+.green {
+  background: @green;
+}
+
+footer {
+  background-color: @grey;
+  color: @white;
 }
