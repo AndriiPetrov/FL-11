@@ -8,13 +8,6 @@ function Hamburger(type, calories, isAddSecretIngredient) {
   let _initialCalories = calories;
   let _counterForAddingSecretIngredient = 0;
 
-  let _isAddSecretIngredient = isAddSecretIngredient;
-  if (_isAddSecretIngredient === undefined) {
-    _isAddSecretIngredient = true;
-  } else {
-    _isAddSecretIngredient = Boolean(isAddSecretIngredient);
-  }
-
   let _bitCounter = 0;
 
   this.getCalories = function() {
@@ -43,14 +36,18 @@ function Hamburger(type, calories, isAddSecretIngredient) {
   }
 
   this.addSecretIngredient = function() {
-    if (_initialCalories === _calories && _counterForAddingSecretIngredient === 0 && _isAddSecretIngredient) {
+    if (_initialCalories === _calories && _counterForAddingSecretIngredient === 0) {
       _counterForAddingSecretIngredient++;
       _calories += 100;
-    } else if ((_initialCalories !== _calories && _counterForAddingSecretIngredient > 0) || !_isAddSecretIngredient) {
+    } else if (_initialCalories !== _calories && _counterForAddingSecretIngredient > 0) {
       console.log('Sorry, you can add secret ingredient only once.');
     } else if (_initialCalories !== _calories && _counterForAddingSecretIngredient === 0) {
       console.log('Sorry, you can add ingredient only before another ingredient');
     }
+  }
+
+  if (isAddSecretIngredient === true) {
+    this.addSecretIngredient();
   }
 
   this.bite = function() {
@@ -122,7 +119,7 @@ function Hamburger(type, calories, isAddSecretIngredient) {
 // myHamburger.addSecretIngredient();
 
 // 6
-// let myHamburger = new Hamburger('classic', 600, false);
+// let myHamburger = new Hamburger('classic', 600, true);
 // myHamburger.addSecretIngredient();
 
 // let myHamburger = new Hamburger('classic', 600, true);
