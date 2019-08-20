@@ -6,13 +6,21 @@ function assign(target) {
       continue;
     } 
 
-    for (let key in arguments[i]) {
-      target[key] = arguments[i][key];
+    let keys = Object.keys(arguments[i]);
+    let symbols = Object.getOwnPropertySymbols(arguments[i]);
+
+    for (let j = 0; j < keys.length; j++) {
+      target[keys[j]] = arguments[i][keys[j]];
+    }
+
+    for (let j = 0; j < symbols.length; j++) {
+      target[symbols[j]] = arguments[i][symbols[j]];
     }
   }
 
   return target;
 }
 
-let obj = assign({}, {a: 1}, {a: 3, b: 2});
-console.log(obj);
+const defaults = {a: 123, b: 777};
+const options = {a: 456};
+const configs = assign({}, defaults, options);
