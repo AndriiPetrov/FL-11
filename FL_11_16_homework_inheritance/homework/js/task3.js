@@ -65,32 +65,6 @@ function Charizard() {
 Charizard.prototype = Object.create(Pokemon.prototype);
 Charizard.prototype.constructor = Charizard;
 
-const charmander = new Charmander();
-const charmeleon = new Charmeleon();
-const charizard = new Charizard();
-
-console.log(charmander);
-console.log(charmeleon);
-console.log(charizard);
-
-console.log(charmander.getType());
-console.log(charmander.getType() === charmeleon.getType());
-console.log(charmeleon.getType() === charizard.getType());
-
-console.log(charmander.evolve());
-console.log(charmander);
-console.log(charmander.evolve().constructor === Charmeleon);
-console.log(charmeleon.evolve().constructor === Charizard);
-console.log(charizard.evolve().constructor === Charizard)
-
-console.log(charmander.getSpecie());
-console.log(charmeleon.getSpecie());
-console.log(charizard.getSpecie() === charmeleon.getSpecie());
-
-console.log(charmander.canFly());
-console.log(charmander.canFly() === charmeleon.canFly());
-console.log(charizard.canFly());
-
 function Pichu() {
   let state = {
     specie: 'Mouse Pokemon',
@@ -132,6 +106,34 @@ function Raichu() {
 }
 Raichu.prototype = Object.create(Pokemon.prototype);
 Raichu.prototype.constructor = Raichu;
+
+
+
+const charmander = new Charmander();
+const charmeleon = new Charmeleon();
+const charizard = new Charizard();
+
+console.log(charmander);
+console.log(charmeleon);
+console.log(charizard);
+
+console.log(charmander.getType());
+console.log(charmander.getType() === charmeleon.getType());
+console.log(charmeleon.getType() === charizard.getType());
+
+console.log(charmander.evolve());
+console.log(charmander);
+console.log(charmander.evolve().constructor === Charmeleon);
+console.log(charmeleon.evolve().constructor === Charizard);
+console.log(charizard.evolve().constructor === Charizard)
+
+console.log(charmander.getSpecie());
+console.log(charmeleon.getSpecie());
+console.log(charizard.getSpecie() === charmeleon.getSpecie());
+
+console.log(charmander.canFly());
+console.log(charmander.canFly() === charmeleon.canFly());
+console.log(charizard.canFly());
 
 const pichu = new Pichu();
 console.log(pichu.getPokemonType());

@@ -3,7 +3,13 @@
 function create(objPrototype, propertiesObj) {
   let obj = {};
 
-  obj.__proto__ = objPrototype;
+  if (objPrototype === null) {
+    Object.setPrototypeOf(obj, Object.prototype)
+  } else {
+    obj.__proto__ = objPrototype;
+  }
+
+  
   Object.assign(obj, propertiesObj);
 
   return obj;
