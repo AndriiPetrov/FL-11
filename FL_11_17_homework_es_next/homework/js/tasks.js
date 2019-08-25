@@ -53,3 +53,34 @@ let add = ( first = required(), second = required() ) => first + second;
 // console.log(add(1));
 
 /* Task 8 */
+// function fetchJson(url) {
+//   return fetch(url)
+//     .then(request => request.text())
+//     .then(text => JSON.parse(text))
+//     .catch(error => console.log(`ERROR: ${error.stack}`));
+// }
+// fetchJson('https://api.github.com/users/AndriiPetrov/repos').then(res => {
+//   let arrayOfNames = []
+//   for ( let i = 0; i < res.length; i++) {
+//     arrayOfNames.push(res[i].name);
+//   }
+//   console.log(arrayOfNames);
+//   return arrayOfNames;
+// });
+
+/* Task 9 */
+async function fetchJson(url) {
+  const request = await fetch(url);
+  const text = await request.text();
+  const res = await JSON.parse(text);
+  function response(res) {
+    let arrayOfNames = [];
+    for ( let i = 0; i < res.length; i++) {
+      arrayOfNames.push(res[i].name);
+    }
+    console.log(arrayOfNames);
+    return arrayOfNames;
+  }
+  return response(res);
+}
+fetchJson('https://api.github.com/users/AndriiPetrov/repos');
