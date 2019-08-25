@@ -60,8 +60,8 @@ let add = ( first = required(), second = required() ) => first + second;
 //     .catch(error => console.log(`ERROR: ${error.stack}`));
 // }
 // fetchJson('https://api.github.com/users/AndriiPetrov/repos').then(res => {
-//   let arrayOfNames = []
-//   for ( let i = 0; i < res.length; i++) {
+//   let arrayOfNames = [];
+//   for (let i = 0; i < res.length; i++) {
 //     arrayOfNames.push(res[i].name);
 //   }
 //   console.log(arrayOfNames);
@@ -75,7 +75,7 @@ async function fetchJson(url) {
   const res = await JSON.parse(text);
   function response(res) {
     let arrayOfNames = [];
-    for ( let i = 0; i < res.length; i++) {
+    for (let i = 0; i < res.length; i++) {
       arrayOfNames.push(res[i].name);
     }
     console.log(arrayOfNames);
