@@ -1,0 +1,9 @@
+<p>app is work!{{name}}</p>
+<header>{{sourceName}}</header>
+<select>
+  <option *ngFor="let arr of arrayOfNews">
+    {{arr.title}}
+  </option>
+</select>
+<input type="text" [(ngModel)]="something" placeholder="Type your text...">
+<router-outlet></router-outlet>
