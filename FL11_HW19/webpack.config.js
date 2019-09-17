@@ -23,9 +23,24 @@ module.exports = {
         ]
       },
       {
+        test: /\.html$/,
+        use: ['html-loader']
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader'
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/',
+              publicPath: 'img/'
+            }
+          },
+          {
+            loader: 'image-webpack-loader'
+          }
+      
         ]
       },
       {
