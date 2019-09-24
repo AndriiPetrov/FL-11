@@ -25,22 +25,22 @@ $(".list").children().css({"font-size": "18px"});
 
 // in #list-1
   // show all hidden and not cloned li
-
+$("#list-1 li:not(.cloned)").show();
   // hide empty li
-
+$("#list-1 li:empty").hide();
 // in #list-3
   // for all even li set margin-left -20px
-
+$("#list-3 li:even").css({"margin-left": "-20px"});
   // for the first li set any different color
-
+$(".list#list-3 li:first").css({"color": "yellow"});
   // for all li with index > 5 set color to #ccc
-
+$("#list-3 li:gt(5)").css({"color": "#ccc"});
 // show ul which is parent
-
+$("ul ul:parent").css({"background-color": "green"});
 // for li wich has em add red color
-
+$("li:has(em)").css({"color": "red"});
 // for li which contains text Buratino set font weight to bold
-
+$("li:contains('Buratino')").css({"font-weight": "bold"})
 
 
 
@@ -51,9 +51,9 @@ $(".list").children().css({"font-size": "18px"});
 // ******************************************************
 
 // for b in p which is the only child set font size 36px
-
+$("p b:only-child").css({"font-size": "36px"});
 // for em in p which is the last child of type set color to green
-
+$("p em:last-of-type").css({"color": "green"});
 
 
 
@@ -67,8 +67,10 @@ $(".list").children().css({"font-size": "18px"});
 // set width 120px for input with attribute name started by 'my'
 // console.log checked checkbox
 // show all images with a cat
-
-
+$("input[name$='age']").css({"width": "80px"});
+$("input[name^='my']").css({"width": "120px"});
+console.log($("input[checked]"));
+$("img[src*='cat']").show()
 // ******************************************************
 // is(), not(), has()
 // eq(), first(), last()
@@ -77,3 +79,5 @@ $(".list").children().css({"font-size": "18px"});
 // ******************************************************
 // for .mbox with index 3 set padding-top 50px
 // for first div wraper for img set float left and border red
+$(".mbox:nth-of-type(3)").css({"padding-buttom":"50px"})
+$("div img").first().css({"float": "left", "border": "1px solid red"});
